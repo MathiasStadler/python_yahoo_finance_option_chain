@@ -1,0 +1,3 @@
+my_project_env_two/lib/**/*
+my_project_env_two/bin/**/*
+my_project_env_two/lib64/**/*
