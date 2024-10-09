@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/user/workspace_python/python_yahoo_finance_option_chain/my_project_env"
+set -gx VIRTUAL_ENV "/home/user/workspace_perl/python_yahoo_finance_option_chain/my_project_env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/user/workspace_python/python_yahoo_finance_option_chain/my_project_env"
+VIRTUAL_ENV="/home/user/workspace_perl/python_yahoo_finance_option_chain/my_project_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
