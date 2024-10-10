@@ -22,7 +22,8 @@ sudo apt update \
 && sudo apt --yes install python3.11\
 && sudo apt --yes install python3.11-dev \
 && sudo apt-get install -y python3.11-venv \
-&& sudo python3.11 -m venv my_project_env \
+&& cd python_yahoo_finance_option_chain \
+&& python3.11 -m venv my_project_env \
 && source my_project_env/bin/activate
 
 ```
@@ -61,3 +62,15 @@ pip3 install yahoo_fin
 ```
 
 pip3 install yahoo_fin
+
+## [pip: cannot execute: required file not found](https://askubuntu.com/questions/1480890/pip-disappeared-after-system-upgrade)
+
+```bash
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
+pipx completions
+pipx upgrade-all
+
+
+```
