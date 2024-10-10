@@ -1,3 +1,7 @@
-my_project_env_two/lib/**/*
-my_project_env_two/bin/**/*
 my_project_env_two/lib64/**/*
+my_project_env/bin/*
+my_project_env/lib/**/*
+
+my_project_env/lib/python3.11/**/*
+../lib/**/*
+../lib64/**/*

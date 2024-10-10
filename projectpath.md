@@ -23,6 +23,7 @@ sudo apt update \
 && sudo apt --yes install python3.11-dev \
 && sudo apt-get install -y python3.11-venv \
 && cd python_yahoo_finance_option_chain \
+&& echo "The follow command MUST/SHOULD run as user non root"; \
 && python3.11 -m venv my_project_env \
 && source my_project_env/bin/activate
 
@@ -46,24 +47,14 @@ sudo apt-get --yes autoclean \
 source my_project_env/bin/activate
 ````
 
-## leave venv
+## HIT => leave venv
 
 ```bash
 # type simple inside shell
 deactivate
 ```
 
-## install project package
-
-```bash
-pip install yahoo_fin
-# or
-pip3 install yahoo_fin
-```
-
-pip3 install yahoo_fin
-
-## [pip: cannot execute: required file not found](https://askubuntu.com/questions/1480890/pip-disappeared-after-system-upgrade)
+## [FIX issue pip: cannot execute: required file not found](https://askubuntu.com/questions/1480890/pip-disappeared-after-system-upgrade)
 
 ```bash
 sudo apt update
@@ -72,5 +63,21 @@ pipx ensurepath
 pipx completions
 pipx upgrade-all
 
-
 ```
+
+## [FIX pip-disappeared-after-system-upgrade ](https://askubuntu.com/questions/1480890/pip-disappeared-after-system-upgrade)
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+## install project package
+
+```bash
+# pip install yahoo_fin
+# or better 
+pip3 install yahoo_fin
+```
+
+
+
