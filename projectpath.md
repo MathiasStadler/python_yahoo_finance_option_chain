@@ -29,14 +29,14 @@ sudo apt update \
 
 ```
 
-## cleanup apt install  DOESN'T WORK
+## cleanup apt install DOESN'T WORK
 
 ```bash
 #!/bin/bash \
-sudo apt-get --yes autoclean \ 
+sudo apt-get --yes autoclean \
 && sudo apt-get --yes --auto-remove autoremove \
 && sudo apt-get --yes clean  \
-&& sudo rm --recursive --force /var/lib/apt/lists/* \ 
+&& sudo rm --recursive --force /var/lib/apt/lists/* \
 && sudo rm -Rf /usr/share/man \
 && sudo rm --recursive --force /usr/share/doc \
 ```
@@ -45,7 +45,7 @@ sudo apt-get --yes autoclean \
 
 ```bash
 source my_project_env/bin/activate
-````
+```
 
 ## HIT => leave venv
 
@@ -71,13 +71,32 @@ pipx upgrade-all
 python3 -m pip install --upgrade pip
 ```
 
-## install project package
+## install project package for yfinance
 
 ```bash
 # pip install yahoo_fin
-# or better 
-pip3 install yahoo_fin
+# thats works
+pip3 install yfinance --upgrade --no-cache-dir
 ```
 
+## sample prg
 
+```python
+import yfinance as yf
+msft = yf.Ticker("MSFT")
+print(msft.info)
+```
 
+## install project package for yfinance-fin
+
+```bash
+pip3 install yahoo_fin --upgrade
+pip3 install requests_html
+```
+
+## sample program
+
+```python
+amazon_weekly= get_data("amzn", start_date="12/04/2009", end_date="12/04/2019", index_as_date = True, interval="1wk")
+amazon_weekly
+```

@@ -5,3 +5,7 @@ my_project_env/lib/**/*
 my_project_env/lib/python3.11/**/*
 ../lib/**/*
 ../lib64/**/*
+lib/**/*
+lib64/
+env/
+my_project_env/**/*
